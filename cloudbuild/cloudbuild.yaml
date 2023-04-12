@@ -1,7 +1,7 @@
 steps:
 # Step 1: Unit Test
 - id: 'Unit Test'
-  name: gcr.io/alert-flames-286515/pythonbaseimage:v2
+  name: gcr.io/alert-flames-286515/pythonbaseimage:v23
   entrypoint: python3
   args:
   - test_app.py

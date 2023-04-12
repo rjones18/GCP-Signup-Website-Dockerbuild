@@ -1,4 +1,11 @@
 steps:
+# Step 1: Unit Test
+- id: 'Unit Test'
+  name: gcr.io/alert-flames-286515/pythonbaseimage:v1
+  entrypoint: python3
+  args:
+  - test_app.py
+
 # Step 1: Build the Docker image
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/signup-python-app:latest', '.']

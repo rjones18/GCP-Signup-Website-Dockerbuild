@@ -1,7 +1,7 @@
 from flask import render_template, redirect, url_for, flash
 from app import application  # Importing the application module.
 from app.forms import SignUpForm  # Importing the SignUpForm class function from the forms.py file
-from google.cloud import datastore, pubsub_v1
+from google.cloud import datastore
 
 # Firestore
 db = datastore.Client()

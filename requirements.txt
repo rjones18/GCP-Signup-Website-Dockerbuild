@@ -34,5 +34,4 @@ WTForms==3.0.1
 zipp==3.7.0
 google
 google-cloud-datastore
-google-cloud-pubsub
 

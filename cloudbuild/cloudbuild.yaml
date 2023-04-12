@@ -1,14 +1,7 @@
 steps:
-
 # Step 1: Unit Test
-- id: 'Install Packages'
-  name: gcr.io/alert-flames-286515/pythonbaseimage:v1
-  entrypoint: pip3
-  args:
-  - pip3 install -r requirements.txt
-
 - id: 'Unit Test'
-  name: gcr.io/alert-flames-286515/pythonbaseimage:v1
+  name: gcr.io/alert-flames-286515/pythonbaseimage:v2
   entrypoint: python3
   args:
   - test_app.py
